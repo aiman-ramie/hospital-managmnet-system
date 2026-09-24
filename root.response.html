@@ -1,0 +1,42 @@
+<br />
+<b>Fatal error</b>:  Uncaught ReflectionException: Class &quot;config&quot; does not exist in C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php:1147
+Stack trace:
+#0 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(1147): ReflectionClass-&gt;__construct('config')
+#1 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(939): Illuminate\Container\Container-&gt;build('config')
+#2 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1085): Illuminate\Container\Container-&gt;resolve('config', Array, true)
+#3 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(867): Illuminate\Foundation\Application-&gt;resolve('config', Array)
+#4 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1065): Illuminate\Container\Container-&gt;make('config', Array)
+#5 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(1846): Illuminate\Foundation\Application-&gt;make('config')
+#6 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(613): Illuminate\Container\Container-&gt;offsetGet('config')
+#7 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(673): Illuminate\Log\LogManager-&gt;getDefaultDriver()
+#8 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(130): Illuminate\Log\LogManager-&gt;parseDriver(NULL)
+#9 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(747): Illuminate\Log\LogManager-&gt;driver()
+#10 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php(475): Illuminate\Log\LogManager-&gt;error('mysqli_release_...', Array)
+#11 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php(433): Illuminate\Foundation\Exceptions\Handler-&gt;reportThrowable(Object(TypeError))
+#12 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(560): Illuminate\Foundation\Exceptions\Handler-&gt;report(Object(TypeError))
+#13 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(146): Illuminate\Foundation\Http\Kernel-&gt;reportException(Object(TypeError))
+#14 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1227): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#15 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\public\index.php(20): Illuminate\Foundation\Application-&gt;handleRequest(Object(Illuminate\Http\Request))
+#16 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php(23): require_once('C:\\Users\\aiman\\...')
+#17 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php:1149
+Stack trace:
+#0 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(939): Illuminate\Container\Container-&gt;build('config')
+#1 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1085): Illuminate\Container\Container-&gt;resolve('config', Array, true)
+#2 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(867): Illuminate\Foundation\Application-&gt;resolve('config', Array)
+#3 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1065): Illuminate\Container\Container-&gt;make('config', Array)
+#4 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php(1846): Illuminate\Foundation\Application-&gt;make('config')
+#5 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(613): Illuminate\Container\Container-&gt;offsetGet('config')
+#6 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(673): Illuminate\Log\LogManager-&gt;getDefaultDriver()
+#7 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(130): Illuminate\Log\LogManager-&gt;parseDriver(NULL)
+#8 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Log\LogManager.php(747): Illuminate\Log\LogManager-&gt;driver()
+#9 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php(475): Illuminate\Log\LogManager-&gt;error('mysqli_release_...', Array)
+#10 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php(433): Illuminate\Foundation\Exceptions\Handler-&gt;reportThrowable(Object(TypeError))
+#11 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(560): Illuminate\Foundation\Exceptions\Handler-&gt;report(Object(TypeError))
+#12 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(146): Illuminate\Foundation\Http\Kernel-&gt;reportException(Object(TypeError))
+#13 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1227): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#14 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\public\index.php(20): Illuminate\Foundation\Application-&gt;handleRequest(Object(Illuminate\Http\Request))
+#15 C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php(23): require_once('C:\\Users\\aiman\\...')
+#16 {main}
+  thrown in <b>C:\Users\aiman\OneDrive\Desktop\Hospitalsystem\laravel-app\vendor\laravel\framework\src\Illuminate\Container\Container.php</b> on line <b>1149</b><br />
